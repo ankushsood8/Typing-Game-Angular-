@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Angular Typing</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--angular cdn link-->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+</head>
+
+<body ng-app="myApp" ng-controller="ctrl">
+    <div class="alert alert-danger text-center" role="alert" style="font-size: 30px">
+        Typing Test
+    </div><br>
+    <div class="alert alert-info text-center" role="alert" style="font-size: 30px">
+        {{no[random]}}
+    </div>
+    <div class="contianer-fluid">
+
+        <div class="col-sm-12"> <input type="text" class="form-control" ng-model="enterinput" ng-keyup="keys()"><br>
+        </div>
+    </div>
+    <br><br>
+    <div class="contianer-fluid">
+        <div class="row">
+            <div class="col-sm-6 bg-primary text-white text-center"
+                style="height: 100px;font-size: 50px">
+                Time Left {{time}}
+            </div>
+            <div class="col-sm-6 bg-secondary text-white text-center"
+                style="height: 100px;font-size: 50px">
+                Score {{score}}
+            </div>
+        </div>
+    </div>
+    <script src="typingscript.js"></script>
+ 
+</body>
+</html>
